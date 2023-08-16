@@ -1,0 +1,33 @@
+<header class="header">
+  <div class="logo">Logo</div>
+  <div>
+    <span class="cart">
+      Cart
+      <span class="cart-item">{{ productsInCart.length }}</span>
+    </span>
+  </div>
+</header>
+<ngb-carousel
+  *ngIf="products"
+  [showNavigationArrows]="showNavigationArrows"
+  [showNavigationIndicators]="showNavigationIndicators">
+  <ng-template ngbSlide *ngFor="let product of products">
+    <div class="carousel-caption">
+      <h1>{{ product.title }}</h1>
+      <section class="prices">
+        <span class="item-price">{{ product.price | number: '1.2-2' }}$,</span>
+        <span class="item-price-discount"
+          >{{ product.discountedPrice | number: '1.2-2' }}$</span
+        >
+      </section>
+      <div class="add-to-cart">
+        <button type="button" (click)="addItem(product)">
+          <img src="assets/svg/circle.svg" />ADD TO CART
+        </button>
+      </div>
+    </div>
+    <div class="img-wrapper">
+      <img [src]="product.image" [alt]="product.description" />
+    </div>
+  </ng-template>
+</ngb-carousel>
