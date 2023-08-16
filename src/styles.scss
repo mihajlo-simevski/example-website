@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+// Due to bootstrap issues this file is loaded here
+@import './app/components/carousel/carousel.component.scss';
+
+:root {
+  --main-bg-color: #20202c;
+  --primary-color: #6971fa;
+  --secondary-color: #727692;
+}
