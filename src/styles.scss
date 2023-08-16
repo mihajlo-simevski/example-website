@@ -3,6 +3,7 @@
 @import 'bootstrap/scss/bootstrap';
 // Due to bootstrap issues this file is loaded here
 @import './app/components/carousel/carousel.component.scss';
+@import './app/components/modal/modal.component.scss';
 
 :root {
   --main-bg-color: #20202c;
