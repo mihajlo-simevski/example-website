@@ -3,9 +3,17 @@
 @import 'bootstrap/scss/bootstrap';
 // Due to bootstrap issues this file is loaded here
 @import './app/components/carousel/carousel.component.scss';
+@import './app/components/modal/modal.component.scss';
+@import './app/components/table/table.component.scss';
 
 :root {
   --main-bg-color: #20202c;
   --primary-color: #6971fa;
   --secondary-color: #727692;
+}
+.text--primary {
+  color: var(--primary-color);
+}
+.align--right {
+  text-align: right;
 }

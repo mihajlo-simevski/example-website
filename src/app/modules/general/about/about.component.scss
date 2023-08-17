@@ -1,0 +1,59 @@
+ul {
+  padding: 0 3rem;
+  gap: 1rem;
+
+  .nav-link {
+    color: var(--secondary-color);
+    font-weight: bold;
+  }
+}
+
+.about {
+  display: flex;
+  background-color: var(--main-bg-color);
+  color: #fff;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.3rem 10%;
+  gap: 1.3rem;
+}
+
+.about-author {
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0 0 0;
+  padding: 1.3rem;
+  gap: 4rem;
+
+  .line {
+    height: 10rem;
+    width: 0.06rem;
+    background: var(--primary-color);
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 65%;
+    gap: 10px;
+  }
+
+  article {
+    margin: 0.6rem 0;
+    color: var(--secondary-color);
+
+    a {
+      color: #fff;
+    }
+  }
+
+  ul {
+    padding: 0;
+    list-style: circle;
+    color: var(--secondary-color);
+
+    li {
+      margin: 0.3px 0;
+    }
+  }
+}
