@@ -1,0 +1,87 @@
+.contact {
+  display: flex;
+  background-color: #282a36;
+  color: #fff;
+  flex-direction: column;
+  align-items: center;
+  padding: 6.3rem 10%;
+  gap: 1.3rem;
+
+  h1 {
+    font-weight: bold;
+    font-size: 3.5rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .contact-information {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.3rem;
+
+    form {
+      width: 34%;
+      .form-control {
+        color: #fff;
+        border-color: transparent;
+        &:focus {
+          border-color: var(--primary-color);
+        }
+      }
+      label {
+        color: var(--secondary-color);
+        font-weight: bold;
+      }
+      input {
+        background-color: var(--main-bg-color);
+        &::placeholder {
+          color: var(--secondary-color);
+        }
+      }
+      button {
+        background-color: var(--primary-color);
+        color: #fff;
+      }
+      textarea {
+        background-color: var(--main-bg-color);
+        &::placeholder {
+          color: var(--secondary-color);
+        }
+      }
+    }
+
+    .address-information {
+      display: flex;
+      width: 40%;
+      flex-direction: column;
+      padding-left: 20px;
+
+      h4 {
+        margin-top: 0;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      a {
+        display: block;
+        margin-top: 10px;
+        color: var(--primary-color);
+      }
+      .phoneNumber {
+        color: var(--primary-color);
+        font-weight: bold;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 0.6rem;
+  background: var(--main-bg-color);
+  color: var(--secondary-color);
+}

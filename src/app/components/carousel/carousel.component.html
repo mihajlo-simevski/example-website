@@ -15,14 +15,18 @@
     <div class="carousel-caption">
       <h1>{{ product.title }}</h1>
       <section class="prices">
-        <span class="item-price">{{ product.price | number: '1.2-2' }}$,</span>
-        <span class="item-price-discount"
-          >{{ product.discountedPrice | number: '1.2-2' }}$</span
+        <span class="item-price"
+          ><strong> {{ product.price | number: '1.2-2' }}$, </strong></span
+        >
+        <span class="item-price-discount">
+          <strong>
+            {{ product.discountedPrice | number: '1.2-2' }}$
+          </strong></span
         >
       </section>
       <div class="add-to-cart">
         <button type="button" (click)="addItem(product)">
-          <img src="assets/svg/circle.svg" />ADD TO CART
+          <img src="assets/svg/circle.svg" alt="circle plus icon" />ADD TO CART
         </button>
       </div>
     </div>
