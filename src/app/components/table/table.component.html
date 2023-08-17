@@ -1,0 +1,26 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Books</th>
+      <th scope="col">Copies</th>
+      <th scope="col" class="align--right">Revenue</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let country of countries; index as i">
+      <td>
+        <img
+          [src]="
+            'https://upload.wikimedia.org/wikipedia/commons/' + country.flag
+          "
+          class="me-2"
+          style="width: 20px" />
+        {{ country.name }}
+      </td>
+      <td>{{ country.copies | number }}</td>
+      <td class="align--right">
+        <strong>${{ country.revenue | number: '1.2-2' }}</strong>
+      </td>
+    </tr>
+  </tbody>
+</table>

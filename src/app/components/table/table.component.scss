@@ -1,0 +1,19 @@
+ngbd-table {
+  width: 100%;
+  padding: 1.3rem;
+
+  .table {
+    thead {
+      border-color: var(--primary-color);
+      tr th {
+        background: transparent;
+        color: #fff;
+      }
+    }
+
+    tbody tr td {
+      background: transparent;
+      color: var(--secondary-color);
+    }
+  }
+}
