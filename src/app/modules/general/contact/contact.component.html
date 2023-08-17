@@ -42,7 +42,9 @@
         </div>
       </div>
 
-      <button type="submit" class="btn btn-primary">Send</button>
+      <button type="button" class="btn btn-primary" (click)="showSuccess()">
+        Send
+      </button>
     </form>
     <div class="address-information">
       <h4>Get in touch</h4>
@@ -60,3 +62,6 @@
   </section>
 </section>
 <footer>Copyright - Nextsense</footer>
+<app-toast-container
+  aria-live="polite"
+  aria-atomic="true"></app-toast-container>
